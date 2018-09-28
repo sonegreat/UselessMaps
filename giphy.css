@@ -1,0 +1,74 @@
+#us-map{
+   
+    float: right;
+    display: block;
+    position: unset;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  path:hover, circle:hover {
+    stroke: yellow!important;
+    stroke-width:2px;
+    stroke-linejoin: round;
+    fill: yellow !important;
+    cursor: pointer;
+  }
+  #path67 {
+    fill: none !important;
+    stroke: yellow !important;
+    cursor: default;
+  }
+ 
+  
+  path:hover, circle:hover {
+    stroke: yellow !important;
+    stroke-width:2px;
+    stroke-linejoin: round;
+    fill: yellow !important;
+    cursor: pointer;
+  }
+  
+  #info-box {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    background-color: yellow;
+    border: 2px solid rgb(55, 52, 255);
+    border-radius: 5px;
+    padding: 5px;
+    font-family: arial;
+    
+  }
+  
+  body {
+      background-color: rgb(55, 80, 165);
+  }
+
+  .jumbotron {
+    font-family: fantasy;
+    background-color: whitesmoke;
+  }
+
+.navbar {
+  font-family: fantasy;
+  background-color: yellow;
+  font-size: 30px;
+}
+
+#maps {
+  font-size: 20px;
+}
+
+#gifs-appear-here {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 3px;
+    
+  }
+  
