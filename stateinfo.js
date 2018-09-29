@@ -42,8 +42,6 @@ $("path, circle").hover(function (e) {
     console.log("state", state)
   
     var queryURL = "https://api.datausa.io/api?show=geo&sumlevel=state&year=latest&required=pop"; +
-      
-  
     $.ajax({
       url: queryURL,
       method: "GET"
@@ -60,7 +58,7 @@ $("path, circle").hover(function (e) {
         $("#population").html("<br>"+"Population "+ stateData[1][2]+"<br>");}
       else if (state=="Arkansas"){
         $("#population").html("<br>"+"Population "+ stateData[2][2]+"<br>");}
-      else if (state=="Alaska"){
+      else if (state=="Arizona"){
         $("#population").html("<br>"+"Population "+ stateData[3][2]+"<br>");}
       else if (state=="California"){
         $("#population").html("<br>"+"Population "+ stateData[4][2]+"<br>");}
@@ -124,7 +122,7 @@ $("path, circle").hover(function (e) {
         $("#population").html("<br>"+"Population "+ stateData[33][2]+"<br>");}
       else if (state=="Oklahoma"){
         $("#population").html("<br>"+"Population "+ stateData[34][2]+"<br>");}
-      else if (state=="Oregan"){
+      else if (state=="Oregon"){
         $("#population").html("<br>"+"Population "+ stateData[35][2]+"<br>");}
       else if (state=="Pennsylvania"){
         $("#population").html("<br>"+"Population "+ stateData[36][2]+"<br>");}
@@ -156,9 +154,6 @@ $("path, circle").hover(function (e) {
         $("#population").html("<br>"+"Population "+ stateData[49][2]+"<br>");}
 
       var queryURL2 = "https://api.datausa.io/api?show=geo&sumlevel=state&year=latest&required=avg_age"; +
-      
-  
-      
     $.ajax({
       url: queryURL2,
       method: "GET"
@@ -175,7 +170,7 @@ $("path, circle").hover(function (e) {
           $("#stateinfo").html("<br>"+"Average Age: "+ ageData[1][2]+"<br>");}
         else if (state=="Arkansas"){
           $("#stateinfo").html("<br>"+"Average Age: "+ ageData[2][2]+"<br>");}
-        else if (state=="Alaska"){
+        else if (state=="Arizona"){
           $("#stateinfo").html("<br>"+"Average Age: "+ ageData[3][2]+"<br>");}
         else if (state=="California"){
           $("#stateinfo").html("<br>"+"Average Age: "+ ageData[4][2]+"<br>");}
@@ -239,7 +234,7 @@ $("path, circle").hover(function (e) {
           $("#stateinfo").html("<br>"+"Average Age: "+ ageData[33][2]+"<br>");}
         else if (state=="Oklahoma"){
           $("#stateinfo").html("<br>"+"Average Age: "+ ageData[34][2]+"<br>");}
-        else if (state=="Oregan"){
+        else if (state=="Oregon"){
           $("#stateinfo").html("<br>"+"Average Age: "+ ageData[35][2]+"<br>");}
         else if (state=="Pennsylvania"){
           $("#stateinfo").html("<br>"+"Average Age: "+ ageData[36][2]+"<br>");}
@@ -274,33 +269,176 @@ $("path, circle").hover(function (e) {
     });
 
 
-  
-      // loop over gifArray and print to page
     
-      
-            //for (var i = 0; i < ageData.length; i++){
-  
-             
-            //   var stateInfo = $("<div>");
-  
-            //   // var p = $("<p>").text("Rating: " + results[i].rating);
-  
-            //   console.log(stateData[i]);
-            //   var StateImage = $("<img>");
-            //   var imgSrc = stateData[i].images.fixed_height.url;
-            //   console.log("imgSrc",imgSrc);
-            //   StateImage.attr("src", imgSrc);
-  
-             
-            // //   // gifDiv.append(p);
-            //   gifDiv.append(StateImage);
-  
-            //  console.log(gifDiv);
-            //   $("#stateinfo").html(stateInfo);
-            
-
-            
           });
+$( function() {
+          
+states=["Alabama",
+"Alaska",
+"Arkansas",
+"Arizona",
+"California",
+"Colorado",
+"Connecticut",
+"Delaware",
+"District of Columbia",
+"Florida",
+"Georgia",
+"Hawaii",
+"Idaho",
+"Illinois",
+"Indiana",
+"Iowa",
+"Kansas",
+"Kentucky",
+"Louisiana",
+"Maine",
+"Maryland",
+"Massachusetts",
+"Michigan",
+"Minnesota",
+"Mississippi",
+"Missouri",
+"Montana",
+"Nebraska",
+"Nevada",
+"New Hampshire",
+"New Jersey",
+"New Mexico",
+"New York",
+"North Carolina",
+"North Dakota",
+"Ohio",
+"Oklahoma",
+"Oregon",
+"Pennsylvania",
+"Rhode Island",
+"South Carolina",
+"South Dakota",
+"Tennessee",
+"Texas",
+"Utah",
+"Vermont",
+"Virginia",
+"Washington",
+"West Virginia",
+"Wisconsin",
+"Wyoming",
+"Puerto Rico"
+];
+for (var i = 0; i <states.length; i++);
+
+if(state=="Alabama"){
+  $("#statename").text(states[0]);}
+  else if (state=="Alaska"){
+    $("#statename").text(states[1]);}
+  else if (state=="Arkansas"){
+    $("#statename").text(states[2]);}
+  else if (state=="Arizona"){
+    $("#statename").text(states[3]);}
+  else if (state=="California"){
+    $("#statename").text(states[4]);}
+  else if (state=="Colorado"){
+    $("#statename").text(states[6]);}
+  else if (state=="Connecticut"){
+    $("#statename").text(states[6]);}
+  else if (state=="Delaware"){
+    $("#statename").text(states[7]);}
+  else if (state=="District of Columbia"){
+    $("#statename").text(states[8]);}
+  else if (state=="Florida"){
+    $("#statename").text(states[9]);}
+  else if (state=="Georgia"){
+    $("#statename").text(states[10]);}
+  else if (state=="Hawaii"){
+    $("#statename").text(states[11]);}
+  else if (state=="Idaho"){
+    $("#statename").text(states[12]);}
+  else if (state=="Illinois"){
+    $("#statename").text(states[13]);}
+  else if (state=="Indiana"){
+    $("#statename").text(states[14]);}
+  else if (state=="Iowa"){
+    $("#statename").text(states[15]);}
+  else if (state=="Kansas"){
+    $("#statename").text(states[16]);}
+  else if (state=="Kentucky"){
+    $("#statename").text(states[17]);}
+  else if (state=="Louisiana"){
+    $("#statename").text(states[18]);}
+  else if (state=="Maine"){
+    $("#statename").text(states[19]);}
+  else if (state=="Maryland"){
+    $("#statename").text(states[20]);}
+  else if (state=="Massachusetts"){
+    $("#statename").text(states[21]);}
+  else if (state=="Michigan"){
+    $("#statename").text(states[22]);}
+  else if (state=="Minnesota"){
+    $("#statename").text(states[23]);}
+  else if (state=="Mississippi"){
+    $("#statename").text(states[24]);}
+  else if (state=="Missouri"){
+    $("#statename").text(states[25]);}
+  else if (state=="Montana"){
+    $("#statename").text(states[26]);}
+  else if (state=="Nebraska"){
+    $("#statename").text(states[27]);}
+  else if (state=="Nevada"){
+    $("#statename").text(states[28]);}
+  else if (state=="New Hamphsire"){
+    $("#statename").text(states[29]);}
+  else if (state=="New Jersey"){
+    $("#statename").text(states[30]);}
+  else if (state=="New Mexico"){
+    $("#statename").text(states[31]);}
+  else if (state=="New York"){
+    $("#statename").text(states[32]);}
+  else if (state=="North Carolina"){
+    $("#statename").text(states[33]);}
+  else if (state=="North Dakota"){
+    $("#statename").text(states[34]);}
+  else if (state=="Ohio"){
+    $("#statename").text(states[35]);}
+  else if (state=="Oklahoma"){
+    $("#statename").text(states[36]);}
+  else if (state=="Oregon"){
+    $("#statename").text(states[37]);}
+  else if (state=="Pennsylvania"){
+    $("#statename").text(states[38]);}
+  else if (state=="Rhode Island"){
+    $("#statename").text(states[39]);}
+  else if (state=="South Carolina"){
+    $("#statename").text(states[40]);}
+  else if (state=="South Dakota"){
+    $("#statename").text(states[41]);}
+  else if (state=="Tennessee"){
+    $("#statename").text(states[42]);}
+  else if (state=="Texas"){
+    $("#statename").text(states[43]);}
+  else if (state=="Utah"){
+    $("#statename").text(states[44]);}
+  else if (state=="Vermont"){
+    $("#statename").text(states[45]);}
+  else if (state=="Virginia"){
+    $("#statename").text(states[46]);}
+  else if (state=="Washington"){
+    $("#statename").text(states[47]);}
+  else if (state=="West Virgina"){
+    $("#statename").text(states[48]);}
+  else if (state=="Wisconsin"){
+    $("#statename").text(states[49]);}
+  else if (state=="Wyoming"){
+    $("#statename").text(states[50]);}
+
+
+
+
+$( "#tags" ).autocomplete({
+  source: states
+});
+
+$()
   
     })
-  
+  });

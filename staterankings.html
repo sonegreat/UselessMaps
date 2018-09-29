@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
+    <link rel="stylesheet" href="stateinfo.css">
+    
+    <title>StateRankings</title>
+
+    
+</head>
+<body>
+    
+        <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Pick a Category
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a value="pop" class="dropdown-item" href="#">Population</a>
+                  <a value= "income" class="dropdown-item" href="#">Average Income</a>
+                  <a value= "poverty" class="dropdown-item" href="#">Population above Poverty</a>
+                  <a value= "drate" class="dropdown-item" href="#">Opiod Deathrate</a>
+                  <a value= "wage" class="dropdown-item" href="#">Avg. Wage</a>
+                </div>
+              </div>
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th  scope="col">#</th>
+            <th scope="col">State</th>
+            <th class="change" scope="col"></th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="rank" scope="row"></th>
+            <td class="stateName"></td>
+            <td class="pop"></td>
+            
+          </tr>
+         
+        </tbody>
+      </table>
+     <!-- <hr/> 
+    <table class="table table-dark">
+        <thead >
+          <tr class="header">
+            <th scope="col">#</th>
+            <th scope="col">State</th>
+            <th scope="col">Average Income</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="rank1" scope="row"></th>
+            <td class="stateName1"></td>
+            <td class="income"></td>
+            
+          </tr>
+         
+        </tbody>
+      </table>
+    <table class="table table-dark">
+        <thead>
+          <tr  class="header">
+            <th scope="col">#</th>
+            <th scope="col">State</th>
+            <th scope="col">Population in Poverty</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="rank2" scope="row"></th>
+            <td class="stateName2"></td>
+            <td class="poverty"></td>
+            
+          </tr>
+         
+        </tbody>
+      </table>
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">State</th>
+            <th scope="col">Opiod Death Rate</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="rank3" scope="row"></th>
+            <td class="stateName3"></td>
+            <td class="drate"></td>
+            
+          </tr>
+         
+        </tbody>
+      </table>
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">State</th>
+            <th scope="col">Average Wage</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th class="rank4" scope="row"></th>
+            <td class="stateName4"></td>
+            <td class="wage"></td>
+            
+          </tr>
+         
+        </tbody>
+      </table> -->
+    
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+      <script src="stateranking.js"> </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.13.0/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/js/bootstrap.min.js"></script>
+</body>
+</html>
